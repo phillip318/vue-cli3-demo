@@ -15,14 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### 内含以下多种 vue Demo
 ```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+动态组件、异步组件、函数式组件
 ```
 
 ### Customize configuration
