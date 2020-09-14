@@ -12,6 +12,7 @@
       <div>商城</div>
       <div>我的</div>
     </div>
+    <bCmp :flag="true" a="123" @submit="submit" @confirm="confirm"/>
   </div>
 </template>
 <script>
@@ -21,6 +22,7 @@ export default {
     later1:() => import('@/components/later1.vue'),
     later2:() => import('@/components/later2.vue'),
     later3:() => import('@/components/later3.vue'),
+    bCmp: () => import('@/components/bCmp'),
   },
   data () {
     return {
@@ -28,11 +30,16 @@ export default {
     }
   },
   created () {
-    console.log('Home created')
   },
   methods: {
     toggle () {
       this.show = !this.show;
+    },
+    submit () {
+      console.log('Home Submit')
+    },
+    confirm () {
+      console.log('Home Confirm')
     }
   }
 }
